@@ -1,0 +1,7 @@
+{
+  "name": "crashlab-frontend",
+  "main": [
+    "app/**/*.js",
+    "app/**/*.css"
+  ]
+}

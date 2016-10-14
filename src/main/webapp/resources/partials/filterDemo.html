@@ -1,0 +1,45 @@
+<div>
+	<div class="col-md-2">
+      
+		<div class="well">
+		
+			<div class="page-header text-left">
+				<h3>Filter</h3>
+			</div>
+		
+		    <form >
+		        <div class="form-group">
+				    <div class="checkbox text-left">
+				        <label> <input type="checkbox" ng-model="sizeFilterCriteria.XL">XL</label>				      
+				     </div>
+				     <div class="checkbox text-left">
+					      <label> <input type="checkbox" ng-model="sizeFilterCriteria.L">L</label>
+					 </div>
+					 <div class="checkbox text-left">
+					    <label> <input type="checkbox" ng-model="sizeFilterCriteria.S">S</label>
+					 </div>
+					 <div class="checkbox text-left">
+					    <label> <input type="checkbox" ng-model="sizeFilterCriteria.XS">XS</label>
+					 </div>				
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<div class="col-md-10">
+		<div class="well">
+		
+			<div class="page-header text-left">
+				<h3>Search Results</h3>
+			</div>
+			
+			 <div ng-repeat="result in results | sizeFilter:sizeFilterCriteria">
+                <h4 class="text-left" >{{result.title}}</h4>
+                <p class="text-left">{{result.desc}}</p>
+                <p class="text-left">size: {{result.size}}</p>
+                <hr>
+			 </div>
+						
+		</div>
+	</div>
+</div>

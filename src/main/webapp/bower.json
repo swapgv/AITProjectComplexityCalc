@@ -1,0 +1,25 @@
+{
+  "name": "crashlab-frontend",
+  "version": "1.0.0-SNAPSHOT",
+  "authors": [
+    "bangn <Bang.NGUYEN@rms.nsw.gov.au>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.13",
+    "bootstrap": "~3.2",
+    "font-awesome": "~4.3.0",
+    "angular-route": "~1.3.14",
+    "bootstrap3-dialog": "~1.34"
+  },
+  "resolutions": {
+    "bootstrap": "~3.2"
+  }
+}

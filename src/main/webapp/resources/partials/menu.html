@@ -1,0 +1,36 @@
+<nav class="navbar navbar-default navbar-fixed-top" ng-controller="menuCtrl">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#/">Crashlab</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li ng-class="{active: isRoute('formDemo')}"><a href="#formDemo">Form Demo</a></li>
+        <li ng-class="{active: isRoute('filterDemo')}"><a href="#filterDemo">Filter Demo</a></li>
+        <li ng-class="{active: isRoute('tabDemo')}"><a href="#tabDemo">Tab Demo</a></li>
+        <li ng-class="{active: isRoute('tableDemo')}"><a href="#tableDemo">Table Demo</a></li>
+      	<li class="dropdown" ng-class="{active: isRoute('widgets')}">
+           <a href="#/widgets" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Other Widgets <span class="caret"></span></a>
+           <ul class="dropdown-menu" role="menu">
+             <li><a href="#/tables">Tables</a></li>
+             <li><a href="#/buttons">Buttons</a></li>
+             <li><a href="#/typography">Typography</a></li>
+             <li><a href="#/forms">Forms</a></li>
+             <li><a href="#/navigations">Navigations</a></li>
+           </ul>
+         </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html">Login <i class="fa fa-sign-in"></i></a></li>
+      	<li><a href="#" ng-click="help_click()">Help <span class="fa fa-question-circle"></span></a></li>
+        <li><a style="margin:0;" href="http://www.rms.nsw.gov.au/"><img class="img-responsive" src="img/rms.png" height="35px"/></a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>

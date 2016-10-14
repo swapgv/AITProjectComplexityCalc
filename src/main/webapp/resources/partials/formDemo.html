@@ -1,0 +1,86 @@
+<div class="container">
+	<div class="col-md-8 col-md-offset-2">
+
+		<div class="well well-md">
+			<!-- PAGE TITLE -->
+			<div class="page-header">
+				<h3>Customer Details</h3>
+			</div>
+
+			<form name="formDemo" class="form-horizontal " >
+		
+				<div class="form-group"
+					ng-class="{'has-error': formDemo.name.$invalid && !formDemo.name.$pristine}">
+					<label for="name" class="control-label col-sm-3">Name</label>
+					<div class="col-sm-9 pull-left">
+						<input type="text" name="name" required class="form-control"
+							placeholder="Bruce Wayne" ng-model="session.name"> <span
+							ng-hide="formDemo.name.$pristine"> <span
+							class="help-block" ng-show="formDemo.name.$error.required">Required</span>
+						</span>
+					</div>
+				</div>
+
+
+				<div class="form-group"
+					ng-class="{'has-error': formDemo.email.$invalid && !formDemo.email.$pristine}">
+					<label for="email" class="control-label col-sm-3">Email</label>
+					<div class="col-sm-9">
+						<input name="email" type="email" class="form-control"
+							ng-model="session.email" ></input> <span
+							ng-hide="formDemo.email.$pristine"> <span
+							class="help-block" ng-show="formDemo.email.$invalid">Please
+								enter a valid email</span>
+						</span>
+					</div>
+				</div>
+				
+				<div class="form-group">
+							<label class="col-sm-3 radio control-label">Gender</label>
+							<div class="col-sm-9" >
+						    	<label class="radio-inline pull-left">
+                                   <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Male
+                                </label>
+                               	<label class="radio-inline pull-left">
+                                   <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Female
+                                </label>
+                            </div>
+                       						
+				</div>
+				
+				<div class="form-group">
+							<label for="select" class="col-sm-3 control-label">Job Title</label>
+							<div class="col-sm-9">
+								<select class="form-control" id="select">
+									<option>Java Developer</option>
+									<option>CSS Developer</option>
+									<option>Solution Architect</option>
+									<option>Team Leader</option>
+									<option>Unemployed</option>
+								</select> 
+							</div>
+						</div>
+				
+                <div class="form-group">
+                     <label for="textArea" class="col-sm-3 control-label">Comments</label>
+                     <div class="col-sm-9">
+                          <textarea class="form-control" rows="3" id="textArea"></textarea>
+					 </div>
+                </div>
+                
+				
+				<br>
+				<br>
+
+						<div class="form-group">
+							<div class="col-lg-10 col-lg-offset-2">
+								<button type="reset" class="btn btn-default">Cancel</button>
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+						
+			</form>
+
+		</div>
+	</div>
+</div>
